@@ -17,6 +17,14 @@
 		B2FB29332379D3DD0079E032 /* CurrencyConverterSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB29302379D38F0079E032 /* CurrencyConverterSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2FB293B2379F4100079E032 /* CurrencyConverterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB29392379F4100079E032 /* CurrencyConverterVC.swift */; };
 		B2FB293C2379F4100079E032 /* CurrencyConverterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FB293A2379F4100079E032 /* CurrencyConverterVC.xib */; };
+		B2FB293F237A08F10079E032 /* CurrencyConverterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB29392379F4100079E032 /* CurrencyConverterVC.swift */; };
+		B2FB2940237A08F10079E032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB28FF2379D26D0079E032 /* AppDelegate.swift */; };
+		B2FB2941237A08F10079E032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB29012379D26D0079E032 /* SceneDelegate.swift */; };
+		B2FB2943237A08F10079E032 /* CurrencyConverterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB29302379D38F0079E032 /* CurrencyConverterSDK.framework */; };
+		B2FB2946237A08F10079E032 /* CurrencyConverterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FB293A2379F4100079E032 /* CurrencyConverterVC.xib */; };
+		B2FB2949237A08F10079E032 /* CurrencyConverterSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB29302379D38F0079E032 /* CurrencyConverterSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2FB2952237A0AFE0079E032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FB2951237A0AFE0079E032 /* Assets.xcassets */; };
+		B2FB2954237A0C970079E032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FB2953237A0C970079E032 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2FB2948237A08F10079E032 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2FB2949237A08F10079E032 /* CurrencyConverterSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +85,10 @@
 		B2FB29302379D38F0079E032 /* CurrencyConverterSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CurrencyConverterSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FB29392379F4100079E032 /* CurrencyConverterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterVC.swift; sourceTree = "<group>"; };
 		B2FB293A2379F4100079E032 /* CurrencyConverterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyConverterVC.xib; sourceTree = "<group>"; };
+		B2FB294D237A08F10079E032 /* CCDemoApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCDemoApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2FB294E237A08F20079E032 /* CCDemoApp1 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CCDemoApp1 copy-Info.plist"; path = "/Users/parth/Desktop/programming-assessment/CCDemoApp1/CCDemoApp1 copy-Info.plist"; sourceTree = "<absolute>"; };
+		B2FB2951237A0AFE0079E032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2FB2953237A0C970079E032 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +114,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2FB2942237A08F10079E032 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2FB2943237A08F10079E032 /* CurrencyConverterSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +133,7 @@
 				B2FB29202379D26E0079E032 /* CCDemoApp1UITests */,
 				B2FB28FD2379D26D0079E032 /* Products */,
 				B2FB292F2379D38F0079E032 /* Frameworks */,
+				B2FB294E237A08F20079E032 /* CCDemoApp1 copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +143,7 @@
 				B2FB28FC2379D26D0079E032 /* CCDemoApp1.app */,
 				B2FB29122379D26E0079E032 /* CCDemoApp1Tests.xctest */,
 				B2FB291D2379D26E0079E032 /* CCDemoApp1UITests.xctest */,
+				B2FB294D237A08F10079E032 /* CCDemoApp2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,8 +155,8 @@
 				B2FB29012379D26D0079E032 /* SceneDelegate.swift */,
 				B2FB29392379F4100079E032 /* CurrencyConverterVC.swift */,
 				B2FB293A2379F4100079E032 /* CurrencyConverterVC.xib */,
-				B2FB29082379D26D0079E032 /* Assets.xcassets */,
-				B2FB290A2379D26D0079E032 /* LaunchScreen.storyboard */,
+				B2FB2950237A0AD60079E032 /* CCDemo2 */,
+				B2FB294F237A0AB80079E032 /* CCDemo1 */,
 				B2FB290D2379D26D0079E032 /* Info.plist */,
 			);
 			path = CCDemoApp1;
@@ -153,6 +186,24 @@
 				B2FB29302379D38F0079E032 /* CurrencyConverterSDK.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2FB294F237A0AB80079E032 /* CCDemo1 */ = {
+			isa = PBXGroup;
+			children = (
+				B2FB290A2379D26D0079E032 /* LaunchScreen.storyboard */,
+				B2FB29082379D26D0079E032 /* Assets.xcassets */,
+			);
+			path = CCDemo1;
+			sourceTree = "<group>";
+		};
+		B2FB2950237A0AD60079E032 /* CCDemo2 */ = {
+			isa = PBXGroup;
+			children = (
+				B2FB2953237A0C970079E032 /* LaunchScreen.storyboard */,
+				B2FB2951237A0AFE0079E032 /* Assets.xcassets */,
+			);
+			path = CCDemo2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +263,24 @@
 			productReference = B2FB291D2379D26E0079E032 /* CCDemoApp1UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B2FB293D237A08F10079E032 /* CCDemoApp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2FB294A237A08F10079E032 /* Build configuration list for PBXNativeTarget "CCDemoApp2" */;
+			buildPhases = (
+				B2FB293E237A08F10079E032 /* Sources */,
+				B2FB2942237A08F10079E032 /* Frameworks */,
+				B2FB2944237A08F10079E032 /* Resources */,
+				B2FB2948237A08F10079E032 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCDemoApp2;
+			productName = CCDemoApp1;
+			productReference = B2FB294D237A08F10079E032 /* CCDemoApp2.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,6 +320,7 @@
 				B2FB28FB2379D26D0079E032 /* CCDemoApp1 */,
 				B2FB29112379D26E0079E032 /* CCDemoApp1Tests */,
 				B2FB291C2379D26E0079E032 /* CCDemoApp1UITests */,
+				B2FB293D237A08F10079E032 /* CCDemoApp2 */,
 			);
 		};
 /* End PBXProject section */
@@ -280,6 +350,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2FB2944237A08F10079E032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2FB2954237A0C970079E032 /* LaunchScreen.storyboard in Resources */,
+				B2FB2952237A0AFE0079E032 /* Assets.xcassets in Resources */,
+				B2FB2946237A08F10079E032 /* CurrencyConverterVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -306,6 +386,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2FB29222379D26E0079E032 /* CCDemoApp1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2FB293E237A08F10079E032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2FB293F237A08F10079E032 /* CurrencyConverterVC.swift in Sources */,
+				B2FB2940237A08F10079E032 /* AppDelegate.swift in Sources */,
+				B2FB2941237A08F10079E032 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +654,40 @@
 			};
 			name = Release;
 		};
+		B2FB294B237A08F10079E032 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CCDemoApp1 copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ParthContractor.CCDemoApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2FB294C237A08F10079E032 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CCDemoApp1 copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ParthContractor.CCDemoApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,6 +723,15 @@
 			buildConfigurations = (
 				B2FB292D2379D26E0079E032 /* Debug */,
 				B2FB292E2379D26E0079E032 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2FB294A237A08F10079E032 /* Build configuration list for PBXNativeTarget "CCDemoApp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2FB294B237A08F10079E032 /* Debug */,
+				B2FB294C237A08F10079E032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
