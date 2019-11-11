@@ -10,11 +10,6 @@ import Foundation
 import UIKit
 
 /// CurrencyConverterHandler is a singleton on which various APIs required for currency conversion are exposed.
-/// Usage:
-///
-///     CurrencyConverterHandler.sharedInstance.getAvailableCurrencies(completionHandler: { currenyList  in
-///})
-///
 @objc final public class CurrencyConverterHandler: NSObject {
 
 @objc public static let sharedInstance = CurrencyConverterHandler()
