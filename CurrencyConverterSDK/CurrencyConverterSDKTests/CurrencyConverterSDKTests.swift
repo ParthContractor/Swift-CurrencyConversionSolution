@@ -18,6 +18,24 @@ class CurrencyConverterSDKTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testBuyRate() {
+        let exp = expectation(description: "\(#function)\(#line)")
+        CurrencyConverterHandler.sharedInstance.getBuyRateFor(currencyCode: "NZD", completionHandler: { buyRate,error  in
+            XCTAssertNotNil(buyRate?.buyRate)
+           exp.fulfill()
+        })
+        waitForExpectations(timeout: 15, handler: nil)
+    }
+    
+    func testSellRate() {
+        let exp = expectation(description: "\(#function)\(#line)")
+        CurrencyConverterHandler.sharedInstance.getSellRateFor(currencyCode: "INR", completionHandler: { sellRate,error  in
+            XCTAssertNotNil(sellRate?.sellRate)
+           exp.fulfill()
+        })
+        waitForExpectations(timeout: 15, handler: nil)
+    }
 
     func testCurrencyCount() {
         let exp = expectation(description: "\(#function)\(#line)")

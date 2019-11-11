@@ -30,6 +30,9 @@
 		B2FB284E2376CFEF0079E032 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB284D2376CFEF0079E032 /* Constants.swift */; };
 		B2FB28502376D24C0079E032 /* JSONModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB284F2376D24C0079E032 /* JSONModels.swift */; };
 		B2FB2853237940EF0079E032 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB2852237940EF0079E032 /* Utility.swift */; };
+		B2FB28A9237997930079E032 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB28A8237997930079E032 /* Error.swift */; };
+		B2FB28AB23799C580079E032 /* BuyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB28AA23799C580079E032 /* BuyRate.swift */; };
+		B2FB28AD23799D0A0079E032 /* SellRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB28AC23799D0A0079E032 /* SellRate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		B2FB284D2376CFEF0079E032 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B2FB284F2376D24C0079E032 /* JSONModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModels.swift; sourceTree = "<group>"; };
 		B2FB2852237940EF0079E032 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		B2FB28A8237997930079E032 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		B2FB28AA23799C580079E032 /* BuyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyRate.swift; sourceTree = "<group>"; };
+		B2FB28AC23799D0A0079E032 /* SellRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellRate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				B2FB28492376CD170079E032 /* Currency.swift */,
+				B2FB28AA23799C580079E032 /* BuyRate.swift */,
+				B2FB28AC23799D0A0079E032 /* SellRate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +138,7 @@
 				B2FB284B2376CF9F0079E032 /* CurrencyAPIManager.swift */,
 				B2FB284F2376D24C0079E032 /* JSONModels.swift */,
 				B2FB2852237940EF0079E032 /* Utility.swift */,
+				B2FB28A8237997930079E032 /* Error.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -268,11 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FB28AD23799D0A0079E032 /* SellRate.swift in Sources */,
 				B2FB284C2376CF9F0079E032 /* CurrencyAPIManager.swift in Sources */,
 				B2FB284A2376CD170079E032 /* Currency.swift in Sources */,
 				B2FB2853237940EF0079E032 /* Utility.swift in Sources */,
 				B2FB28502376D24C0079E032 /* JSONModels.swift in Sources */,
+				B2FB28AB23799C580079E032 /* BuyRate.swift in Sources */,
 				B2FB28452376BF230079E032 /* CurrencyConverterHandler.swift in Sources */,
+				B2FB28A9237997930079E032 /* Error.swift in Sources */,
 				B2FB284E2376CFEF0079E032 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,12 +9,12 @@
 import Foundation
 
 public struct Currency {
-    let currencyID: String
-    let code: String
-    let name: String
-    let country: String
-    let buyRate: String
-    let sellRate: String
-    let lastUpdated: String
+    public let currencyID: String
+    public let code: String
+    public let name: String
+    public let country: String
+    public let buyRate: String
+    public let sellRate: String
+    public let lastUpdated: String
 }
 

@@ -10,3 +10,4 @@ import Foundation
 
 let str_API_URL = "https://www.westpac.com.au/bin/getJsonRates.wbc.fx.json"
 let fxPortFolioKey = "FX"
+let notAvailable = "N/A"

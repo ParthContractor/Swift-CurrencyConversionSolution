@@ -9,12 +9,20 @@
 import Foundation
 import UIKit
 
+/// CurrencyConverterHandler is a singleton on which various APIs required for currency conversion are exposed.
+/// Usage:
+///
+///     CurrencyConverterHandler.sharedInstance.getAvailableCurrencies(completionHandler: { currenyList  in
+///})
+///
 @objc final public class CurrencyConverterHandler: NSObject {
 
 @objc public static let sharedInstance = CurrencyConverterHandler()
     private override init() {
     }
-
+    
+    /// "getAvailableCurrencies"  is useful to fetch all required data for forex functionality to work. This returns array of custom model  'Currency'. All required data including Currency name, country name, currency code, sell/buy rate and last updated timing is available in shot.
+    /// - Parameter completionHandler: This is Async API and the completition handler provides required result i.e   [Currency]-array of all available currency.
     public func getAvailableCurrencies(completionHandler: @escaping (_ currencyList:[Currency]) -> Void){
         CurrencyAPIManager.shared.getCurrencyData(completionHandler:{ arrayData,error  in
             if let _ = error{
@@ -32,6 +40,71 @@ import UIKit
             }
         })
     }
+    
+    /// "getBuyRateFor"  is helper method to fetch buy rate and lastupdatedtime for given currency through AUD. This returns either buy rate or error.
+    /// - Parameter completionHandler: This is Async API which expects currency code and the completition handler provides required result i.e   BuyRate or  CurrencyConversionError for given currency code.
+    public func getBuyRateFor(currencyCode:String, completionHandler: @escaping (_ buyRate:BuyRate?, _ error: CurrencyConversionError?) -> Void){
+        
+        CurrencyConverterHandler.sharedInstance.getAvailableCurrencies(completionHandler: { currenyList  in
+            if currenyList.count == 0 {
+                completionHandler(nil, CurrencyConversionError.currencyNotFound)
+            }
+            
+            if let objCurrency = currenyList.first(where: { $0.code == currencyCode}) {
+                if objCurrency.buyRate.count == 0 || objCurrency.buyRate == notAvailable {
+                    completionHandler(nil, CurrencyConversionError.buyRateUnavailable)
+                }
+                else{
+                    let objBuyRate = self.convertToBuyRate(objCurrency)
+                    completionHandler(objBuyRate, nil)
+                }
+            }
+            else{
+                completionHandler(nil, CurrencyConversionError.currencyNotFound)
+            }
+        })
+    }
+    
+    /// "getSellRateFor"  is helper method to fetch sell rate and lastupdatedtime for given currency through AUD. This returns either buy rate or error.
+       /// - Parameter completionHandler: This is Async API which expects currency code and the completition handler provides required result i.e   SellRate or  CurrencyConversionError for given currency code.
+       public func getSellRateFor(currencyCode:String, completionHandler: @escaping (_ sellRate:SellRate?, _ error: CurrencyConversionError?) -> Void){
+           CurrencyConverterHandler.sharedInstance.getAvailableCurrencies(completionHandler: { currenyList  in
+               if currenyList.count == 0 {
+                   completionHandler(nil, CurrencyConversionError.currencyNotFound)
+               }
+               
+               if let objCurrency = currenyList.first(where: { $0.code == currencyCode  }) {
+                   if objCurrency.sellRate.count == 0 || objCurrency.sellRate == notAvailable {
+                       completionHandler(nil, CurrencyConversionError.sellRateUnavailable)
+                   }
+                   else{
+                       let objSellRate = self.convertToSellRate(objCurrency)
+                       completionHandler(objSellRate, nil)
+                   }
+               }
+               else{
+                   completionHandler(nil, CurrencyConversionError.currencyNotFound)
+               }
+           })
+       }
+    
+    private func convertToBuyRate(_ objCurrency: Currency) -> BuyRate {
+        if objCurrency.lastUpdated.count != 0, objCurrency.lastUpdated != notAvailable {
+            return BuyRate(buyRate: objCurrency.buyRate, lastUpdated: objCurrency.lastUpdated)
+        }
+        else{
+            return BuyRate(buyRate: objCurrency.buyRate, lastUpdated: nil)
+        }
+    }
+    
+    private func convertToSellRate(_ objCurrency: Currency) -> SellRate {
+          if objCurrency.lastUpdated.count != 0, objCurrency.lastUpdated != notAvailable {
+              return SellRate(sellRate: objCurrency.sellRate, lastUpdated: objCurrency.lastUpdated)
+          }
+          else{
+              return SellRate(sellRate: objCurrency.sellRate, lastUpdated: nil)
+          }
+      }
     
     private func convertDataToCurrencyList(_ product: Product) -> [Currency] {
         var currencyList = [Currency]()
