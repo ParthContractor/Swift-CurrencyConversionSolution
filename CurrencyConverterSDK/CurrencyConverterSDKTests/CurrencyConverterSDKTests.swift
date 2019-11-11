@@ -45,4 +45,13 @@ class CurrencyConverterSDKTests: XCTestCase {
         })
         waitForExpectations(timeout: 15, handler: nil)
     }
+    
+    func testBuyRateUnAvailableError() {
+           let exp = expectation(description: "\(#function)\(#line)")
+           CurrencyConverterHandler.sharedInstance.getBuyRateFor(currencyCode: "INR", completionHandler: { buyRate,error  in
+            XCTAssertEqual(error,CurrencyConversionError.buyRateUnavailable)
+              exp.fulfill()
+           })
+           waitForExpectations(timeout: 15, handler: nil)
+       }
 }
