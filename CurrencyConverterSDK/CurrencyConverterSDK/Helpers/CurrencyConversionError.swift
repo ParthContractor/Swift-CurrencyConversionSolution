@@ -1,5 +1,5 @@
 //
-//  Error.swift
+//  CurrencyConversionError.swift
 //  CurrencyConverterSDK
 //
 //  Created by Parth on 11/11/19.

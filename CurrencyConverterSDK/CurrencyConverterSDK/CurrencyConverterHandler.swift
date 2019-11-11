@@ -65,7 +65,7 @@ import UIKit
         })
     }
     
-    /// "getSellRateFor"  is helper method to fetch sell rate and lastupdatedtime for given currency through AUD. This returns either buy rate or error.
+    /// "getSellRateFor"  is helper method to fetch sell rate and lastupdatedtime for given currency through AUD. This returns either sell rate or error.
        /// - Parameter completionHandler: This is Async API which expects currency code and the completition handler provides required result i.e   SellRate or  CurrencyConversionError for given currency code.
        public func getSellRateFor(currencyCode:String, completionHandler: @escaping (_ sellRate:SellRate?, _ error: CurrencyConversionError?) -> Void){
            CurrencyConverterHandler.sharedInstance.getAvailableCurrencies(completionHandler: { currenyList  in
