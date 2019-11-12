@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CurrencyConverterSDK
 
 let navigationTitle = "Western forex"
 
@@ -21,5 +22,11 @@ extension UIColor {
         static let navigationBarTintColor = UIColor.orange
         static let navigationTintColor = UIColor.yellow
         static let currencyRatesListColor = UIColor.red
+    }
+}
+
+extension Currency: CustomStringConvertible {
+    public var description: String {
+        return ("\(code) ---\("SellRate:") \(sellRate) and \("BuyRate:") \(buyRate) \n LastUpdated: \(lastUpdated)")
     }
 }

@@ -22,14 +22,8 @@ extension CurrencyRateDisplayVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CurrencySelectionTableViewCell.cellIdentifier) as! CurrencySelectionTableViewCell
-        cell.currencyLabel.text = currencyRates[indexPath.row].code
+        cell.currencyLabel.text = currencyRates[indexPath.row].description
         cell.accessibilityIdentifier = currencyRates[indexPath.row].currencyID
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
     }
 }

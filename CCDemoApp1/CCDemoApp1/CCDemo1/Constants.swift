@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CurrencyConverterSDK
 
 let navigationTitle = "MoneyTap forex"
 
@@ -24,3 +25,10 @@ extension UIColor {
         static let currencyRatesListColor = UIColor.green
     }
 }
+
+extension Currency: CustomStringConvertible {
+    public var description: String {
+        return ("\(code) (\(country))---\("SellRate:") \(sellRate)")
+    }
+}
+
