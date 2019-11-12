@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B2FB29002379D26D0079E032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB28FF2379D26D0079E032 /* AppDelegate.swift */; };
-		B2FB29022379D26D0079E032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB29012379D26D0079E032 /* SceneDelegate.swift */; };
 		B2FB29092379D26D0079E032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FB29082379D26D0079E032 /* Assets.xcassets */; };
 		B2FB290C2379D26D0079E032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2FB290A2379D26D0079E032 /* LaunchScreen.storyboard */; };
 		B2FB29172379D26E0079E032 /* CCDemoApp1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB29162379D26E0079E032 /* CCDemoApp1Tests.swift */; };
@@ -16,7 +15,6 @@
 		B2FB29322379D3DD0079E032 /* CurrencyConverterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB29302379D38F0079E032 /* CurrencyConverterSDK.framework */; };
 		B2FB29332379D3DD0079E032 /* CurrencyConverterSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB29302379D38F0079E032 /* CurrencyConverterSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2FB2940237A08F10079E032 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB28FF2379D26D0079E032 /* AppDelegate.swift */; };
-		B2FB2941237A08F10079E032 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB29012379D26D0079E032 /* SceneDelegate.swift */; };
 		B2FB2943237A08F10079E032 /* CurrencyConverterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB29302379D38F0079E032 /* CurrencyConverterSDK.framework */; };
 		B2FB2949237A08F10079E032 /* CurrencyConverterSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2FB29302379D38F0079E032 /* CurrencyConverterSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2FB2952237A0AFE0079E032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FB2951237A0AFE0079E032 /* Assets.xcassets */; };
@@ -84,7 +82,6 @@
 /* Begin PBXFileReference section */
 		B2FB28FC2379D26D0079E032 /* CCDemoApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCDemoApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FB28FF2379D26D0079E032 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2FB29012379D26D0079E032 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B2FB29082379D26D0079E032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2FB290B2379D26D0079E032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2FB290D2379D26D0079E032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				B2FB28FF2379D26D0079E032 /* AppDelegate.swift */,
-				B2FB29012379D26D0079E032 /* SceneDelegate.swift */,
 				B2FB295B237A13580079E032 /* CurrencyRateDisplayVC.swift */,
 				B2FB295A237A13580079E032 /* CurrencyRateDisplayVC_Extension.swift */,
 				B2FB2961237A13590079E032 /* CurrencyRateDisplayVC.xib */,
@@ -417,7 +413,6 @@
 				B2FB2964237A13590079E032 /* CurrencyRateDisplayVC.swift in Sources */,
 				B2FB2974237A1B970079E032 /* CurrencySelectionTableViewCell.swift in Sources */,
 				B2FB29002379D26D0079E032 /* AppDelegate.swift in Sources */,
-				B2FB29022379D26D0079E032 /* SceneDelegate.swift in Sources */,
 				B2FB2956237A0F8D0079E032 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +443,6 @@
 				B2FB2965237A13590079E032 /* CurrencyRateDisplayVC.swift in Sources */,
 				B2FB2975237A1B970079E032 /* CurrencySelectionTableViewCell.swift in Sources */,
 				B2FB2940237A08F10079E032 /* AppDelegate.swift in Sources */,
-				B2FB2941237A08F10079E032 /* SceneDelegate.swift in Sources */,
 				B2FB2959237A0FD30079E032 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -584,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -20,7 +20,13 @@ extension UIViewController {
     
     func showLoadingIndicator(onView : UIView) {
         let loadingView = UIView.init(frame: onView.bounds)
-        let ai = UIActivityIndicatorView.init(style: .medium)
+        let ai: UIActivityIndicatorView!
+        if #available(iOS 13.0, *) {
+            ai = UIActivityIndicatorView.init(style: .medium)
+        }
+        else{
+            ai = UIActivityIndicatorView.init(style: .gray)
+        }
         ai.backgroundColor = .clear
         ai.startAnimating()
         ai.center = loadingView.center
