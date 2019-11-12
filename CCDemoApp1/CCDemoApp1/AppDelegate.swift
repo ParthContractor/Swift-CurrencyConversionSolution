@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CurrencyConverterSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,10 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func redirectToTicTacToeBoardScreen(){
-        let ticTacToeVC = CurrencyConverterVC(
-            nibName: "CurrencyConverterVC",
-            bundle: nil)
-        let navigationController = UINavigationController(rootViewController: ticTacToeVC)
+        let currencyRateDisplayVC = CurrencyRateDisplayVC(nibName: "CurrencyRateDisplayVC")
+        let navigationController = UINavigationController(rootViewController: currencyRateDisplayVC)
         navigationController.navigationBar.isTranslucent = true
         navigationController.isNavigationBarHidden = false
         self.window?.rootViewController = navigationController
@@ -34,8 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func decorateNavigationBarAppearance() {
-        UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().barTintColor = UIColor.orange
+        UINavigationBar.appearance().barTintColor = UIColor.ThemeColor.navigationBarTintColor
+        UINavigationBar.appearance().tintColor = UIColor.ThemeColor.navigationTintColor
     }
 }
 
