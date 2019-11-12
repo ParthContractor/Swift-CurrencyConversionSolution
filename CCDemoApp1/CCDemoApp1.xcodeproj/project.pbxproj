@@ -33,6 +33,10 @@
 		B2FB2973237A1B970079E032 /* CurrencySelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FB2970237A1B970079E032 /* CurrencySelectionTableViewCell.xib */; };
 		B2FB2974237A1B970079E032 /* CurrencySelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB2971237A1B970079E032 /* CurrencySelectionTableViewCell.swift */; };
 		B2FB2975237A1B970079E032 /* CurrencySelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB2971237A1B970079E032 /* CurrencySelectionTableViewCell.swift */; };
+		B2FB2979237A33AB0079E032 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB2977237A33AB0079E032 /* UIViewExtensions.swift */; };
+		B2FB297A237A33AB0079E032 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB2977237A33AB0079E032 /* UIViewExtensions.swift */; };
+		B2FB297B237A33AB0079E032 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB2978237A33AB0079E032 /* UIViewControllerExtensions.swift */; };
+		B2FB297C237A33AB0079E032 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FB2978237A33AB0079E032 /* UIViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,8 @@
 		B2FB2961237A13590079E032 /* CurrencyRateDisplayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencyRateDisplayVC.xib; sourceTree = "<group>"; };
 		B2FB2970237A1B970079E032 /* CurrencySelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencySelectionTableViewCell.xib; sourceTree = "<group>"; };
 		B2FB2971237A1B970079E032 /* CurrencySelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencySelectionTableViewCell.swift; sourceTree = "<group>"; };
+		B2FB2977237A33AB0079E032 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		B2FB2978237A33AB0079E032 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,7 @@
 				B2FB295B237A13580079E032 /* CurrencyRateDisplayVC.swift */,
 				B2FB295A237A13580079E032 /* CurrencyRateDisplayVC_Extension.swift */,
 				B2FB2961237A13590079E032 /* CurrencyRateDisplayVC.xib */,
+				B2FB2976237A33510079E032 /* Helper */,
 				B2FB295C237A13590079E032 /* CustomCell */,
 				B2FB2950237A0AD60079E032 /* CCDemo2 */,
 				B2FB294F237A0AB80079E032 /* CCDemo1 */,
@@ -230,6 +237,15 @@
 				B2FB2970237A1B970079E032 /* CurrencySelectionTableViewCell.xib */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		B2FB2976237A33510079E032 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B2FB2978237A33AB0079E032 /* UIViewControllerExtensions.swift */,
+				B2FB2977237A33AB0079E032 /* UIViewExtensions.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,7 +411,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FB297B237A33AB0079E032 /* UIViewControllerExtensions.swift in Sources */,
 				B2FB2962237A13590079E032 /* CurrencyRateDisplayVC_Extension.swift in Sources */,
+				B2FB2979237A33AB0079E032 /* UIViewExtensions.swift in Sources */,
 				B2FB2964237A13590079E032 /* CurrencyRateDisplayVC.swift in Sources */,
 				B2FB2974237A1B970079E032 /* CurrencySelectionTableViewCell.swift in Sources */,
 				B2FB29002379D26D0079E032 /* AppDelegate.swift in Sources */,
@@ -424,7 +442,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FB297C237A33AB0079E032 /* UIViewControllerExtensions.swift in Sources */,
 				B2FB2963237A13590079E032 /* CurrencyRateDisplayVC_Extension.swift in Sources */,
+				B2FB297A237A33AB0079E032 /* UIViewExtensions.swift in Sources */,
 				B2FB2965237A13590079E032 /* CurrencyRateDisplayVC.swift in Sources */,
 				B2FB2975237A1B970079E032 /* CurrencySelectionTableViewCell.swift in Sources */,
 				B2FB2940237A08F10079E032 /* AppDelegate.swift in Sources */,

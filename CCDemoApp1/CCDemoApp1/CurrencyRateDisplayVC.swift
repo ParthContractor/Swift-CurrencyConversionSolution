@@ -31,6 +31,7 @@ class CurrencyRateDisplayVC: UIViewController {
     }
     
     func loadData(){
+        showLoadingIndicator(onView: view)
         CurrencyConverterHandler.sharedInstance.getAvailableCurrencies(completionHandler: { currenyList  in
             let sortedArray = currenyList.sorted {
                 $0.code < $1.code
@@ -38,6 +39,7 @@ class CurrencyRateDisplayVC: UIViewController {
             self.currencyRates = sortedArray
             DispatchQueue.main.async {
                 self.tableViewCurrencyRateDisplay.reloadData()
+                self.removeLoadingIndicator()
             }
         })
     }
