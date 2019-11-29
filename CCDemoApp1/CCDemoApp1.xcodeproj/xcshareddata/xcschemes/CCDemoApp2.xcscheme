@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B2FB28322376B0140079E032"
+               BuildableName = "CurrencyConverterSDKTests.xctest"
+               BlueprintName = "CurrencyConverterSDKTests"
+               ReferencedContainer = "container:../CurrencyConverterSDK/CurrencyConverterSDK.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

@@ -18,12 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        redirectToTicTacToeBoardScreen()
+        redirectToCurrencyRateDisplayScreen()
         decorateNavigationBarAppearance()
         return true
     }
 
-    func redirectToTicTacToeBoardScreen(){
+    func redirectToCurrencyRateDisplayScreen(){
         let currencyRateDisplayVC = CurrencyRateDisplayVC(nibName: "CurrencyRateDisplayVC")
         let navigationController = UINavigationController(rootViewController: currencyRateDisplayVC)
         navigationController.navigationBar.isTranslucent = true
